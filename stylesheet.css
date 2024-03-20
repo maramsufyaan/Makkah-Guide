@@ -1,0 +1,134 @@
+
+
+.sticky-top {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            z-index: 1000; /* Ensure it's on top of other content */
+
+        }
+
+    
+.navbar-brand{
+    color: white !important;
+    
+}
+
+        /* Custom CSS for white text */
+        .navbar-nav .nav-link {
+            color: white !important;
+        }
+.navbar{
+    background-color: black;
+    
+}
+
+
+
+     /* Custom CSS for image and text layout */
+        .image-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+          /*  background-color: white; /* Background color for the container */
+             
+        }
+
+
+        .image-container img {
+            max-width: 100%;
+            max-height: 80vh;
+               
+        }
+
+        .text-container {
+            text-align: center;
+            padding-top: 20%;
+         
+            
+        }
+
+
+ 
+.hero{
+    
+    margin: 0 !important;
+padding: 0 !important;
+max-width: 100% !important;
+}
+
+.hero-img{
+    border-radius: 20px;
+    height: 600px;
+    width: auto;
+}
+
+.btnts-row{
+    justify-content: space-between; /*  هذي تخلي مسافة بين العناصر اللي داخل التاق*/
+ 
+    height: 1000px;
+    width: 100%;
+    padding: 0 30px;
+    margin: 0 !important;
+     display: flex;
+     align-items: center;
+     height: 50vh; 
+        background-color: #A57E6A;
+
+}
+.btns{
+margin: 0 !important;
+padding: 0 !important;
+max-width: 100% !important;  
+  background-color:  white;
+    
+    
+}
+.book{
+     
+    border: solid;
+    border-radius: 15px;
+    height:  300px;
+    text-align:center;
+    border-color: white;
+    background-color: white;
+    text-decoration: none;
+    color: black;
+padding: 100px 0;
+    
+    
+}
+
+.book:hover {
+    opacity: 1;
+   transform: translateY(-5px);
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+    
+}
+
+.inner-btn{
+    display:none;
+    text-align: center;
+    padding: 70px 0;
+    
+}
+
+.book:hover  .inner-btn{
+
+display:block;
+   
+ 
+
+}
+
+
+
+
+
+
+
+
+
+
+
