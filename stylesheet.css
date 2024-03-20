@@ -65,16 +65,14 @@ max-width: 100% !important;
 }
 
 .btnts-row{
-    justify-content: space-between; /*  هذي تخلي مسافة بين العناصر اللي داخل التاق*/
- 
-    height: 1000px;
+    
+    justify-content: space-between; /*  هذي تخلي مسافة بين العناصر اللي داخل التاق*/     
     width: 100%;
-    padding: 0 30px;
-    margin: 0 !important;
-     display: flex;
-     align-items: center;
-     height: 50vh; 
-        background-color: #A57E6A;
+    padding: 15px 30px;
+    margin: 0 !important;   
+    display: flex;     
+    align-items: center;       
+    background-color: #A57E6A;
 
 }
 .btns{
@@ -95,8 +93,8 @@ max-width: 100% !important;
     background-color: white;
     text-decoration: none;
     color: black;
-padding: 100px 0;
-    
+    padding: 100px 0;
+   margin: 20px 0 20px 0; 
     
 }
 
