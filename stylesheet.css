@@ -1,6 +1,5 @@
 
 /*section header ---------------------*/   
-
 .sticky-top {
   position: fixed;
   top: 0;
@@ -9,23 +8,17 @@
 }
 .navbar-brand{
 color: white !important;
-
 }
-
 /* Custom CSS for white text */
 .navbar-nav .nav-link {
   color: white !important;
 }
 .navbar{
 background-color: black;
-
 }
 .dropdown-menu{
-
 text-decoration-color:black;
 background-color: #d5d1cc;
-
-
 }
 .dropdown-menu a:hover{
   border-radius: 8px;
@@ -126,21 +119,14 @@ max-width: 100% !important;
 .inner-btn{
     display:none;
     text-align: center;
-    padding: 70px 0;
-    
+    padding: 70px 0; 
 }
-
 .book:hover  .inner-btn{
-
-display:block;
-   
+display:block;  
 }
-
 .fa-person-military-pointing{
-    
-    font-size: 50px;
-     height: 80px;  
-    
+     font-size: 50px;
+     height: 80px;    
 }
 /*  
 .guide-container {
@@ -216,34 +202,19 @@ display:block;
     /*start Icon list ---------------------*/   
 
 /*section header ---------------------*/   
-
-/*section header ---------------------*/   
-
-.sticky-top {
-  position: fixed;
-  top: 0;
-  width: 100%;
-  z-index: 100%; /* Ensure it's on top of other content */
-}
 .navbar-brand{
 color: white !important;
-
 }
-
 /* Custom CSS for white text */
 .navbar-nav .nav-link {
   color: white !important;
 }
 .navbar{
 background-color: black;
-
 }
 .dropdown-menu{
-
 text-decoration-color:black;
 background-color: #d5d1cc;
-
-
 }
 .dropdown-menu a:hover{
   border-radius: 8px;
@@ -259,18 +230,17 @@ background-color: #d5d1cc;
 
 
 @import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css");
-
 .icon-2 {
   list-style: none;
   padding-left: 0;
   margin: 56px;
-  margin-bottom: 20px;
   font-size: 15px;
   top:0;
   left: 0;
   text-align: center;
-  padding-top: 20px;
-  background-color: #F6F5EF;  
+  padding-top: 17px;
+  background-color: #F6F5EF;
+  
 }
 .icon-2 li {
   display: inline-block;
@@ -289,7 +259,9 @@ background-color: #d5d1cc;
 }
 
 /*end Icon list ---------------------*/   
-
+.collapsible-container {
+  margin-top: 160px; /* Adjust margin to accommodate fixed icon list */
+}
 .collapsible {
 background-color:#d5d1cc;
 color: black;
@@ -303,10 +275,7 @@ outline: none;
 font-size: 15px;
 margin-left: 14.5%;
 
-margin-bottom: 10px;
-
 }
-
 /*
 .active, .collapsible:hover {
 هنا لو حطيت هوفر يصير حتو الهوم هوفر
@@ -342,6 +311,9 @@ margin-bottom: 0.5rem;
   float: left;
   width: 100%;
 }
+
+
+
 
 
 
