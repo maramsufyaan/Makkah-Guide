@@ -77,9 +77,7 @@ background-color: #d5d1cc;
     padding: 15px 30px;
     margin: 0 !important;   
     display: flex;     
-    align-items: center;       
- 
-
+    align-items: center;
 }
 .second-color{
        background-color: #767067;
@@ -92,36 +90,71 @@ max-width: 100% !important;
     
     
 }
-.book{
-     
-    border: solid;
-    border-radius: 15px;
-    height:  300px;
+.profile-area{
+        padding:80px 0;
+        
+    }
+
+    .card{
+        box-shadow: 0 0 30px rgba(0,0,0.5)
+            overflow:hidden;
+        border-radius: 15px;
+           border: solid;
     text-align:center;
-    border-color: white;
-    background-color: white;
-    text-decoration: none;
-    color: black;
-    padding: 100px 0;
+    border-color: #c8c8c8;
+text-decoration: none;
+color: black;
+
    margin: 20px 0 20px 0; 
-        background-color:#F6F5EF;
+ background-color:#F6F5EF;
+        
 
+    }
+    .img1 img{
+        
+        height:200px;
+        border-top-right-radius: 15px;
+        border-top-left-radius: 15px;
+        width: 100%;
+    }
     
-}
-
-.book:hover {
-    opacity: 1;
-   transform: translateY(-5px);
-    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
-    
-}
-
-.inner-btn{
+    .img2 img{
+        
+        position: relative;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        z-index: 1;
+        width:140px;
+        height: 140px;
+        border-radius: 50%;
+        border:7px solid  #eae5d9 ;
+        margin-top:-80px;
+    }
+    .card:hover .img2 img{
+      border-color:#c8c8c8;
+        transition:.7s  
+    }
+    .main-text{
+        padding: 30px 0;
+        text-align: center;  
+    } 
+    .main-text h2{
+        text-transform: uppercase;
+        font-weight: 900;
+        font-size:20px;
+        margin: 0 0 20px;
+    }
+    .main-text p{
+     font-size: 16px;
+        padding: 0 35px;
+    }
+    .inner-btn{
     display:none;
     text-align: center;
     padding: 70px 0; 
 }
-.book:hover  .inner-btn{
+.card:hover  .inner-btn{
 display:block;  
 }
 .fa-person-military-pointing{
@@ -196,7 +229,141 @@ display:block;
 .base-color h1{
     padding-top:  50px;
 }
+
+
+/*end abouttttttttttttttttttttttttttttttttttttttttttttt*/
+
+
+h1 {
+    font-family: 'Poppins', sans-serif, 'arial';
+    font-weight: 600;
+    font-size: 72px;
+    color: black;
+    text-align: center;
+}
+
+h4 {
+    font-family: 'Roboto', sans-serif, 'arial';
+    font-weight: 400;
+    font-size: 20px;
+    color: #9b9b9b;
+    line-height: 1.5;
+}
+
+/* ///// inputs /////*/
+
+input:focus ~ label, textarea:focus ~ label, input:valid ~ label, textarea:valid ~ label {
+    font-size: 0.75em;
+    color: #999;
+    top: -5px;
+    -webkit-transition: all 0.225s ease;
+    transition: all 0.225s ease;
+}
+
+.styled-input {
+    float: left;
+    width: 293px;
+    margin: 1rem 0;
+    position: relative;
+    border-radius: 4px;
+}
+
+@media only screen and (max-width: 768px){
+    .styled-input {
+        width:100%;
+    }
+}
+
+.styled-input label {
+    color: #999;
+    padding: 1.3rem 30px 1rem 30px;
+    position: absolute;
+    top: 10px;
+    left: 0;
+    -webkit-transition: all 0.25s ease;
+    transition: all 0.25s ease;
+    pointer-events: none;
+}
+
+.styled-input.wide { 
+    width: 650px;
+    max-width: 100%;
+}
+
+input,
+textarea {
+    padding: 30px;
+    border: 0;
+    width: 100%;
+    font-size: 1rem;
+    background-color: #2d2d2d;
+    color: white;
+    border-radius: 4px;
+}
+
+input:focus,
+textarea:focus { outline: 0; }
+
+input:focus ~ span,
+textarea:focus ~ span {
+    width: 100%;
+    -webkit-transition: all 0.075s ease;
+    transition: all 0.075s ease;
+}
+
+textarea {
+    width: 100%;
+    min-height: 15em;
+}
+
+.input-container {
+    width: 650px;
+    max-width: 100%;
+    margin: 20px auto 25px auto;
+}
+
+.submit-btn {
+    float: right;
+    padding: 7px 35px;
+    border-radius: 60px;
+    display: inline-block;
+    background-color: #4b8cfb;
+    color: white;
+    font-size: 18px;
+    cursor: pointer;
+    box-shadow: 0 2px 5px 0 rgba(0,0,0,0.06),
+              0 2px 10px 0 rgba(0,0,0,0.07);
+    -webkit-transition: all 300ms ease;
+    transition: all 300ms ease;
+}
+
+.submit-btn:hover {
+    transform: translateY(1px);
+    box-shadow: 0 1px 1px 0 rgba(0,0,0,0.10),
+              0 1px 1px 0 rgba(0,0,0,0.09);
+}
+
+@media (max-width: 768px) {
+    .submit-btn {
+        width:100%;
+        float: none;
+        text-align:center;
+    }
+}
+
+input[type=checkbox] + label {
+  color: #ccc;
+  font-style: italic;
+} 
+
+input[type=checkbox]:checked + label {
+  color: #f00;
+  font-style: normal;
+}
 /*end index*/
+
+
+
     
     
     /*start Icon list ---------------------*/   
