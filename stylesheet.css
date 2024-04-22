@@ -360,6 +360,85 @@ input[type=checkbox]:checked + label {
   color: #f00;
   font-style: normal;
 }
+
+/* add background image url --> img/img2/img3 */
+            .card__img {
+                height: 192px;
+                width: 100%;
+                background-image: url("./src/img/landmark1.PNG"); /*img*/
+                background-repeat: no-repeat;
+                background-size: cover;
+                border-radius: 20px;
+            }
+
+            .card__img2 {
+                height: 192px;
+                width: 100%;
+                background-image: url("./src/img/k1.PNG"); /*img2*/
+                background-repeat: no-repeat;
+                background-size: cover;
+                border-radius: 20px;
+
+            }
+
+            .card__img3 {
+                height: 192px;
+                width: 100%;
+                background-image: url("./src/img/mina.jpg"); /*img3*/
+                background-repeat: no-repeat;
+                background-size: cover;
+                border-radius: 20px;
+
+            }
+
+            /* end background-image */
+
+            /* avater img/img2/img3 */
+            .card__avatar {
+                position: absolute;
+                width: 114px;
+                height: 114px;
+                background: var(--bg-color);
+                border-radius: 100%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                top: calc(50% - 57px);
+                background-image: url("./src/img/landmark2.PNG"); /*avater*/
+                background-repeat: no-repeat;
+                background-size: cover;
+            }
+
+            .card__avatar2 {
+                position: absolute;
+                width: 114px;
+                height: 114px;
+                background: var(--bg-color);
+                border-radius: 100%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                top: calc(50% - 57px);
+                background-image: url("./src/img/umarah2.PNG"); /*avater 2*/
+                background-repeat: no-repeat;
+                background-size: cover;
+            }
+
+            .card__avatar3 {
+                position: absolute;
+                width: 114px;
+                height: 114px;
+                background: var(--bg-color);
+                border-radius: 100%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                top: calc(50% - 57px);
+                background-image: url("./src/img/hajj1.PNG"); /*avater 3*/
+                background-repeat: no-repeat;
+                background-size: cover;
+            }
+
 /*end index*/
 
 
