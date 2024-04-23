@@ -1,17 +1,97 @@
 body{
     overflow-x: hidden;
 }
+
+
+/* Add images */
+.titleland{
+    padding-top: 100px;
+}
+/* add background image url --> img/img2/img3/4/5 */
+.card__img {
+    height: 192px;
+    width: 100%;
+    background-image: url("../img/Capture.PNG"); /*Mount Noor*/
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 20px;
+}
+
+.card__img2 {
+    height: 192px;
+    width: 100%;
+    background-image: url("https://upload.wikimedia.org/wikipedia/ar/3/38/%D8%AC%D8%A8%D9%84_%D8%AB%D9%88%D8%B1.jpg"); /*Thawr Mount*/
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 20px;
+
+}
+
+.card__img3 {
+    height: 192px;
+    width: 100%;
+    background-image: url("./src/img/Capture.PNG"); /*Hira Cultural District*/
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 20px;
+
+}
+.card__img4 {
+    height: 192px;
+    width: 100%;
+    background-image: url("./src/img/Capture.PNG"); /*The Mosque of Aishah*/
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 20px;
+
+}
+.card__img5 {
+    height: 192px;
+    width: 100%;
+    background-image: url("./src/img/Capture.PNG"); /*Museums*/
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 20px;
+
+}
+
+
+/* Btn Close */
+.close-land{
+    font-size: 23px;
+    padding: 10px;
+    background-color: brown;
+    width: 50px;
+    border-radius: 50% 50%;
+    cursor: pointer;
+    position: fixed;
+    top:5%;
+}
+.close-land i{
+    margin-left: 5px;
+
+}
+
+/* page 1  */
 .page {
     position: absolute;
     width: 100%;
     background-color: rgb(0, 0, 0);
     z-index: 100;
-    padding: 90px 3% 220px;
+    padding: 90px 3% 100px;
     display: none;
     color: white;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width:70%;
+    height:70%;
+    overflow-y: auto;
+
 
 }
 
+/* page2 */
 .Thawr-Mount {
     position: absolute;
     width: 100%;
@@ -20,10 +100,18 @@ body{
     padding: 90px 3%;
     display: none;
     color: white;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width:70%;
+    height:70%;
+    overflow-y: auto;
     
 
 }
 
+
+/* page3 */
 .Hira {
     position: absolute;
     width: 100%;
@@ -32,10 +120,19 @@ body{
     padding: 90px 3%;
     display: none;
     color: white;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width:70%;
+    height:70%;
+    overflow-y: auto;
 
 
 
 }
+
+
+/* page4 */
 .Aishah {
     position: absolute;
     width: 100%;
@@ -44,17 +141,33 @@ body{
     padding: 90px 3% 220px;
     display: none;
     color: white;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width:70%;
+    height:70%;
+    overflow-y: auto;
 }
+
+/* page5 */
 .Museums {
     position: absolute;
     width: 100%;
     background-color: rgb(0, 0, 0);
     z-index: 100;
-    padding: 90px 3% 700px;
+    padding: 90px 3% 100px;
     display: none;
     color: white;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width:70%;
+    height:70%;
+    overflow-y: auto;
 }
 
+
+/* page6 */
 .Thawr-Mount p,
 .Hira p,
 h3 {
@@ -208,6 +321,11 @@ h3 {
     animation: animate 1s ease-in-out 0.6s 1 forwards;
 }
 
+.map{
+    display: flex;
+    justify-content: center;
+}
+
 @keyframes animate {
     from {
         opacity: 0;
@@ -248,3 +366,6 @@ footer{
     margin-top: 100px;
     display:block;
 }
+
+
+

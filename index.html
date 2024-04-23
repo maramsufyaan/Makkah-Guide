@@ -22,8 +22,64 @@
             margin: 0;
             padding: 0;
             background-color: #F6F5EF;
+            
         }
     </style>
+    <style>
+        .hero-text{
+            transform: translateX(0px);
+            animation: slide 2s ease-in-out;
+        }
+        @keyframes slide{
+            0%{
+                transform: translateX(-500px);
+            }
+            to{
+                transform: translateX(0px);
+            }
+        }
+        .hero-img{
+            transform: translateX(0px);
+            animation: hero-img 2s ease-in-out;
+        }
+        @keyframes hero-img{
+            0%{
+                transform: translateX(500px);
+            }
+            to{
+                transform: translateX(0px);
+            }
+        }
+    </style>
+            </div>
+            <style>
+                .container h3 {
+                    color: rgba(0, 0, 0, 0.692);
+                }
+    
+                @media screen and (min-width: 755px) {
+                    .menu {
+                        display: none;
+                    }
+    
+                    .show {
+                        display: none;
+                    }
+    
+                }
+                .card{
+            transform: translateX(0px);
+            animation: hero-img 4s ease-in-out;
+        }
+        @keyframes hero-img{
+            0%{
+                transform: translateX(500px);
+            }
+            to{
+                transform: translateX(0px);
+            }
+        }
+            </style>
 </head>
 
 <body>
@@ -37,24 +93,19 @@
             <li><a href="./landmark.html">Landmark</a></li>
             <li><a href="./Hajj.html">Hajj</a></li>
             <li><a href="./Umrah.html">Umrah</a></li>
-            <li><a href="./contact.html">Contact Us</a></li>
+            <li><a href="#contact">Contact Us</a></li>
 
 
 
 
         </nav>
-        <div>
-            <li class="nav-item dropdown text-white">
-                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
-                    data-bs-toggle="dropdown" aria-expanded="false">
-                    English
-                </a>
-                <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                    <li><a class="dropdown-item" href="#">Arabic</a></li>
-
-                </ul>
-            </li>
-        </div>
+        <div class="box">
+            <select>
+              <option>EN</option>
+              <option>AR</option>
+       
+            </select>
+          </div>
         <div class="show">
             <div id="open"><i class="fas fa-bars text-white"></i></div>
             <div id="close"><i class="fas fa-times text-white"></i></div>
@@ -64,15 +115,14 @@
             <li><a href="./landmark.html">Landmark</a></li>
             <li><a href="./Hajj.html">Hajj</a></li>
             <li><a href="./Umrah.html">Umrah</a></li>
-            <li><a href="./contact.html">Contact Us</a></li>
-                 <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
-            data-bs-toggle="dropdown" aria-expanded="false">
-            English
-        </a>
-        <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-            <li><a class="dropdown-item" href="#">Arabic</a></li>
-
-        </ul>
+            <li><a href="#contact">Contact Us</a></li>
+           <div class="box">
+            <select>
+              <option>EN</option>
+              <option>AR</option>
+       
+            </select>
+          </div>
             
         </div>
     </header>
@@ -93,23 +143,6 @@
 
             </div>
 
-        </div>
-        <style>
-            .container h3 {
-                color: rgba(0, 0, 0, 0.692);
-            }
-
-            @media screen and (min-width: 755px) {
-                .menu {
-                    display: none;
-                }
-
-                .show {
-                    display: none;
-                }
-
-            }
-        </style>
 
     </div>
 
@@ -119,7 +152,7 @@
 
     <!----------------------------------------- cards main-------------------------------------- -->
    
-    <div class="profile-aria second-color">
+    <div class="profile-aria">
         <div class="card">
             <div class="card__img"></div>
             <div class="card__avatar"></div>
@@ -131,6 +164,7 @@
                 </a>
             </div>
         </div>
+     
 
 
         <div class="card">
@@ -156,7 +190,7 @@
                 <button class="card__btn">Button</button>
                 </a>
             </div>
-
+     
 
 
         </div>
@@ -230,18 +264,14 @@
             <div class="col-md-6">
                 <div class="move">
                     <h3 class="about-txt"><i class="fa-solid fa-circle-exclamation mr-1"></i>About Us</h3>
-                    <h3 class="pt-0 text-white"><b> Makkah Visitors Guides </b> </h3>
-                    <h4 class="text-black pb-5 mr-1"> Makkah Visitors Guidelines
-Our website is your first choice for
-information about Mecca and how to
-perform rituals
-Through our website, you can learn
-how to start Umrah and Hajj from the
-first step and know all the landmarks
-of Mecca with its stories, and you can
-download all the information from the
-website to keep it with you even if you
-do not have the Internet available.</h4>
+                    <h3 class="pt-0 text-white"><b> Mecca Visitors Guides </b> </h3>
+                    <h4 class="text-black pb-5 mr-1"> Use Nusuk, the first-ever official planning, booking and
+                        experience platform, to create
+                        your Hajj or Umrah itinerary to Makkah, Madinah, and beyond. With Nusuk, travelers from
+                        all over the world can easily organize their entire visit, from applying for an eVisa to
+                        booking hotels and flights. In the future, Nusuk can also be used to schedule visits to
+                        important sites, find transportation, curate itineraries, and access on-ground tools
+                        such as the Tawaf tracker and more.</h4>
                 </div>
             </div>
         </div>
@@ -251,7 +281,7 @@ do not have the Internet available.</h4>
     <!---------------!end section cards ---------------------->
 
     <!-- start contact -->
-    <div class="contact_us_2 mt-5">
+    <div class="contact_us_2 mt-5" id="contact">
         <div class="responsive-container-block big-container">
             <div class="blueBG">
             </div>
@@ -281,10 +311,10 @@ do not have the Internet available.</h4>
                                     placeholder="please enter email or phone..." required />
                             </div>
                             <div class="form-ui">
-                                <label for="type"> Type of Message</label>
+                                <label for="type" class="typemessage"> Type of Message</label>
                                 <select class="ui dropdown" name="type" id="">
                                     <option value="1">Suggestion</option>
-                                    <option value="0">inquiry</option>
+                                    <option value="0">Questions</option>
                                 </select>
                             </div>
 

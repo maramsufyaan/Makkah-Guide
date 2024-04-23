@@ -1,5 +1,3 @@
-let next = document.querySelector(".next")
-let prev = document.querySelector(".prev")
 let secland = document.querySelector(".sec-land")
 let show = document.getElementById("show");
 let show2 = document.getElementById("show2");
@@ -59,6 +57,47 @@ show5.onclick = function(){
 
 
 }
+
+
+// LandMark and Btn close or Exit
+// page1
+    btnclose = document.getElementById('btn-close');
+    closeland = document.querySelector('.close-land');
+    closeland.onclick = function(){
+        btnclose.style.display = 'none';
+    }
+
+
+
+    // page2
+     btnclose2 = document.getElementById('btn-close2');
+    land2 = document.getElementById('land2');
+    land2.onclick = function(){
+        btnclose2.style.display = 'none';
+    }
+
+
+    //page3
+
+    btnclose3 = document.getElementById('btn-close3');
+   land3 = document.getElementById('land3');
+   land3.onclick = function(){
+       btnclose3.style.display = 'none';
+   }
+
+       //page4
+       btnclose4 = document.getElementById('btn-close4');
+      land4 = document.getElementById('land4');
+      land4.onclick = function(){
+          btnclose4.style.display = 'none';
+      }
+
+             //page5
+             btnclose5 = document.getElementById('btn-close5');
+            land5 = document.getElementById('land5');
+            land5.onclick = function(){
+                btnclose5.style.display = 'none';
+            }
 
 
 

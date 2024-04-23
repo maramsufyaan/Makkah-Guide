@@ -19,12 +19,6 @@
     crossorigin="anonymous" referrerpolicy="no-referrer" />
   <!--page html to css -->
   <link href="stylesheet.css" rel="stylesheet">
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
-  <!-------------bootstrap icon-->
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
-
-
-
   <style>
     body {
       font-family: Gotham-Regular, ZaridSans-Regular, sans-serif;
@@ -40,11 +34,55 @@
     .text-container {
       color: rgba(0, 0, 0, 0.829);
     }
-    
+   header{
+    position: fixed;
+    top: 0;
+  }
+  .container-icon{
+    margin-top: 100px;
+  }
 
+    .overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    z-index: 9999;
+}
 
+.overlay-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    text-align: center;
+}
+@media (max-width: 600px) {
+  .overlay-content{
+    width: 90%;
+  }
 
-  </style>
+}
+
+.close-btn {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+</style>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+  <!-------------bootstrap icon-->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
 </head>
 
 <body>
@@ -58,23 +96,17 @@
         <li><a href="./landmark.html">Landmark</a></li>
         <li><a href="./Hajj.html">Hajj</a></li>
         <li><a href="./Umrah.html">Umrah</a></li>
-        <li><a href="./contact.html">Contact Us</a></li>
 
 
 
 
     </nav>
-    <div>
-        <li class="nav-item dropdown text-white">
-            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
-                data-bs-toggle="dropdown" aria-expanded="false">
-                English
-            </a>
-            <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                <li><a class="dropdown-item" href="#">Arabic</a></li>
-
-            </ul>
-        </li>
+    <div class="box">
+      <select>
+        <option>EN</option>
+        <option>AR</option>
+ 
+      </select>
     </div>
     <div class="show">
         <div id="open"><i class="fas fa-bars text-white"></i></div>
@@ -85,27 +117,17 @@
         <li><a href="./landmark.html">Landmark</a></li>
         <li><a href="./Hajj.html">Hajj</a></li>
         <li><a href="./Umrah.html">Umrah</a></li>
-        <li><a href="./contact.html">Contact Us</a></li>
-        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
-            data-bs-toggle="dropdown" aria-expanded="false">
-            English
-        </a>
-        <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-            <li><a class="dropdown-item" href="#">Arabic</a></li>
-
-        </ul>
+        <div class="box">
+          <select>
+            <option>EN</option>
+            <option>AR</option>
+     
+          </select>
+        </div>
     
     </div>
 </header>
-<style>
-  header{
-    position: fixed;
-    top: 0;
-  }
-  .container-icon{
-    margin-top: 100px;
-  }
-</style>
+
   
     <!-- Message  -->
   <div id="overlay" class="overlay">
@@ -139,38 +161,7 @@ Follow the instructions and rules
               </ul>
     </div>
 </div>
-<style>
-    .overlay {
-    display: none;
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.7);
-    z-index: 9999;
-}
 
-.overlay-content {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    background-color: #fff;
-    padding: 20px;
-    border-radius: 5px;
-    text-align: center;
-}
-
-.close-btn {
-    position: absolute;
-    top: 10px;
-    right: 15px;
-    font-size: 20px;
-    cursor: pointer;
-}
-
-</style>
 <script>
     document.addEventListener("DOMContentLoaded", function() {
     var overlay = document.getElementById('overlay');
@@ -1005,6 +996,7 @@ Sa'i. There are many barbershops near the Sanctuary.
     </script>
     <!----------------------------------------------End Section collapse---------------------------------------------->
 
+    <script src="./src/js/main.js"></script> <!--Main js App (menu)-->
   </section>
 
 

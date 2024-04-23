@@ -61,7 +61,7 @@ background-color: #d5d1cc;
     
     margin: 0 !important;
     padding: 0 !important;
-    max-width: 99% !important;
+    max-width: 100% !important;
 }
 
 .hero-img{
@@ -275,7 +275,7 @@ input:focus ~ label, textarea:focus ~ label, input:valid ~ label, textarea:valid
 }
 
 .styled-input label {
-    color: #999;
+color: #999;
     padding: 1.3rem 30px 1rem 30px;
     position: absolute;
     top: 10px;
