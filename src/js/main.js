@@ -1,4 +1,4 @@
-let secland = document.querySelector(".sec-land")
+//let secland = document.querySelector(".sec-land")
 let show = document.getElementById("show");
 let show2 = document.getElementById("show2");
 let show3 = document.getElementById("show3");

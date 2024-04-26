@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QR Barcode Generator</title>
+    <!-- Include a QR code library -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/qrious/4.0.2/qrious.min.js"></script>
+    <style>
+        #qrcode {
+            margin: 20px auto;
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <div class="page" id="btn-close">
+        <!-- Content within the <div> -->
+        <div class="close-land"><i class="fa-solid fa-right-from-bracket"></i></div>
+        <h1 class="text-page text-center py-5 text-white">Landmarks of Makkah</h1>
+        <!-- Rest of your content goes here -->
+
+    </div>
+    
+    <!-- QR Code placeholder -->
+    <canvas id="qrcode"></canvas>
+
+    <script>
+        // Get the content of the div
+        var content = document.getElementById('btn-close').innerHTML;
+        // Create QR code instance
+        var qr = new QRious({
+            element: document.getElementById('qrcode'),
+            value: content
+        });
+    </script>
+</body>
+</html>
