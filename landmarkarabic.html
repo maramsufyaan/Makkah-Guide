@@ -36,10 +36,9 @@
 
         </nav>
         <div class="box">
-            <select>
-                <option>EN</option>
-                <option>AR</option>
-
+            <select id="languageSelector">
+                <option value="ar">AR</option>
+                <option value="en">EN</option>
             </select>
         </div>
 
@@ -405,7 +404,23 @@
             var map = new google.maps.Map(document.getElementById("googleMap"), mapProp);
         }
     </script>
-
+    <script>
+        // Get the language selector element
+        const languageSelector = document.getElementById('languageSelector');
+        
+        // Add an event listener to detect changes in the selected language
+        languageSelector.addEventListener('change', function() {
+            // Get the selected language value
+            const selectedLanguage = languageSelector.value;
+            
+            // Redirect to the corresponding language version of the page
+            if (selectedLanguage === 'en') {
+                window.location.href = 'landmark.html';; // Redirect to Arabic version
+            }else {
+                window.location.href = 'landmarkarabic.html'; // Redirect to English version
+            }
+        });
+    </script>
 
     <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_KEY&callback=myMap"></script>
 </body>

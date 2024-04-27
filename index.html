@@ -100,10 +100,9 @@
 
         </nav>
         <div class="box">
-            <select>
-              <option>EN</option>
-              <option>AR</option>
-       
+            <select id="languageSelector">
+                <option value="en">EN</option>
+                <option value="ar">AR</option>
             </select>
           </div>
         <div class="show">
@@ -117,10 +116,9 @@
             <li><a href="./Umrah.html">Umrah</a></li>
             <li><a href="#contact">Contact Us</a></li>
            <div class="box">
-            <select>
-              <option>EN</option>
-              <option>AR</option>
-       
+            <select id="languageSelector">
+                <option value="en">EN</option>
+                <option value="ar">AR</option>
             </select>
           </div>
             
@@ -359,6 +357,23 @@
         </div>
     </footer>
     <script src="./src/js/main.js"></script>
+    <script>
+        // Get the language selector element
+        const languageSelector = document.getElementById('languageSelector');
+        
+        // Add an event listener to detect changes in the selected language
+        languageSelector.addEventListener('change', function() {
+            // Get the selected language value
+            const selectedLanguage = languageSelector.value;
+            
+            // Redirect to the corresponding language version of the page
+            if (selectedLanguage === 'ar') {
+                window.location.href = 'indexarabic.html';; // Redirect to Arabic version
+            }else {
+                window.location.href = 'index.html'; // Redirect to English version
+            }
+        });
+    </script>
     </div>
 </body>
 

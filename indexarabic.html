@@ -96,10 +96,9 @@
             <li><a href="#contact">تواصل معنا </a></li>
         </nav>
         <div class="box">
-            <select>
-              <option>EN</option>
-              <option>AR</option>
-       
+            <select id="languageSelector">
+                <option value="ar">AR</option>
+                <option value="en">EN</option>
             </select>
           </div>
         <div class="show">
@@ -113,10 +112,9 @@
             <li><a href="./Umrah.html">العمرة</a></li>
             <li><a href="#contact"> تواصل معنا</a></li>
            <div class="box">
-            <select>
-              <option>EN</option>
-              <option>AR</option>
-       
+            <select id="languageSelector">
+                <option value="ar">AR</option>
+                <option value="en">EN</option>
             </select>
           </div>
             
@@ -351,7 +349,7 @@
                  قم بتحميل هذا الملف الذي يحتوي على كافة
                  إرشادات الحج والعمرة
                  معالم مكة </p>
-            <a href="./src/pdf/Makkah-visitors-guidlin-Arabic.pdf" class="download-button" download><i class="fa-regular fa-file-pdf"></i>
+            <a href="./src/pdf/Mecca Visitors Guidelines.pdf" class="download-button" download><i class="fa-regular fa-file-pdf"></i>
                 تحميل الملف</a>
 
             <div class="row">
@@ -359,6 +357,23 @@
         </div>
     </footer>
     <script src="./src/js/main.js"></script>
+    <script>
+        // Get the language selector element
+        const languageSelector = document.getElementById('languageSelector');
+        
+        // Add an event listener to detect changes in the selected language
+        languageSelector.addEventListener('change', function() {
+            // Get the selected language value
+            const selectedLanguage = languageSelector.value;
+            
+            // Redirect to the corresponding language version of the page
+            if (selectedLanguage === 'en') {
+                window.location.href = 'index.html';; // Redirect to Arabic version
+            }else {
+                window.location.href = 'indexarabic.html'; // Redirect to English version
+            }
+        });
+    </script>
     </div>
 </body>
 

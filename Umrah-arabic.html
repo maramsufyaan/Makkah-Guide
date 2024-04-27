@@ -99,11 +99,10 @@
 
     </nav>
     <div class="box">
-      <select>
-        <option>EN</option>
-        <option>AR</option>
- 
-      </select>
+      <select id="languageSelector">
+        <option value="ar">AR</option>
+        <option value="en">EN</option>
+    </select>
     </div>
     <div class="show">
         <div id="open"><i class="fas fa-bars text-white"></i></div>
@@ -137,7 +136,7 @@
                    قم بتحميل هذا الملف يحتوي على كافة
                     إرشادات الحج والعمرة ومعالم مكة
                     </h6> 
-              <a href="./src/pdf/Makkah-visitors-guidlin-Arabic.pdf" class="download-button" download><i class="fa-regular fa-file-pdf"></i>
+              <a href="./src/pdf/Mecca Visitors Guidelines.pdf" class="download-button" download><i class="fa-regular fa-file-pdf"></i>
                   تحميل هذا الملف</a>
                 </li>
                 <li> <h6><strong>  رقم الطوارئ</strong> 
@@ -896,6 +895,23 @@ src="https://www.youtube.com/embed/CcyuRgacoww?si=mKpUj_-HWUDaxOhi" title="YouTu
     <!----------------------------------------------End Section collapse---------------------------------------------->
 
     <script src="./src/js/main.js"></script> <!--Main js App (menu)-->
+    <script>
+      // Get the language selector element
+      const languageSelector = document.getElementById('languageSelector');
+      
+      // Add an event listener to detect changes in the selected language
+      languageSelector.addEventListener('change', function() {
+          // Get the selected language value
+          const selectedLanguage = languageSelector.value;
+          
+          // Redirect to the corresponding language version of the page
+          if (selectedLanguage === 'en') {
+              window.location.href = 'Umrah.html';; // Redirect to Arabic version
+          }else {
+              window.location.href = 'Umrah-arabic.html'; // Redirect to English version
+          }
+      });
+  </script>
   </section>
 
 

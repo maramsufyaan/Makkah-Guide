@@ -65,11 +65,10 @@
 
     </nav>
     <div class="box">
-      <select>
-        <option>EN</option>
-        <option>AR</option>
- 
-      </select>
+      <select id="languageSelector">
+        <option value="ar">AR</option>
+        <option value="en">EN</option>
+    </select>
     </div>
     <div class="show">
         <div id="open"><i class="fas fa-bars text-white"></i></div>
@@ -628,7 +627,23 @@ function closeOverlay() {
      
     </script>
     <!----------------------------------------------End Section collapse---------------------------------------------->
-
+    <script>
+      // Get the language selector element
+      const languageSelector = document.getElementById('languageSelector');
+      
+      // Add an event listener to detect changes in the selected language
+      languageSelector.addEventListener('change', function() {
+          // Get the selected language value
+          const selectedLanguage = languageSelector.value;
+          
+          // Redirect to the corresponding language version of the page
+          if (selectedLanguage === 'en') {
+              window.location.href = 'Hajj.html';; // Redirect to Arabic version
+          }else {
+              window.location.href = 'hajj-arabic.html'; // Redirect to English version
+          }
+      });
+  </script>
   </section>
 
 
